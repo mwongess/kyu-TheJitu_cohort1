@@ -87,10 +87,11 @@ button{
 @media screen and (max-width: 600px) {
     body{
         margin: 0;
-        width: 100vw;
+        width: 90vw;
     }
     .mobile{
         display: flex;
+        justify-content: space-between;
     }
     .navigation{
         display: none;
