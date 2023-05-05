@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding:1rem 1.5rem;
+}
+.mobile{
+    display: none;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.left,.right, .left div{
+    display: flex;
+}
+.left{
+    align-items: center;
+    gap: 2rem;
+}
+.right{
+    align-items: center;
+}
+select{
+    border: none;
+}
+select:hover{
+    color: hsl(0, 0%, 8%);
+}
+button{
+    width: 7rem;
+    height: 2rem;
+    background-color: transparent;
+}
+.login{
+    border: none;
+}
+.register{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.main{
+    display: flex;
+    height: 85vh;
+    padding:0 6rem;
+    gap: 3rem;
+}
+.upper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.upper h2{
+    font-size: 60px;
+    font-weight: bold;
+}
+.upper p{
+    color: hsl(0, 0%, 41%);
+    font-size: 20px;
+}
+.lower{
+    display: flex;
+    gap: 2rem;
+}
+.main-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-right{
+    width: 50%;
+    background-image: url(./images/image-hero-desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain
+}
+.learn-more{
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color:  hsl(0, 0%, 8%);
+}
+@media screen and (max-width: 600px) {
+    body{
+        margin: 0;
+        width: 100vw;
+    }
+    .mobile{
+        display: flex;
+    }
+    .navigation{
+        display: none;
+    }
+    .main{
+        margin: 0;
+        width: 100vw;
+        padding: 0;
+        gap: 0;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .main-left,.main.right{
+        width: 100%;
+    }
+    .main-right{
+        padding: 0;
+        background-image: url(./images/image-hero-mobile.png);
+        width: 100vw;
+        height: 80vh;
+    }
+    .main-left{
+        margin: 0 2rem;
+    }
+    .upper h2{
+        font-size: 25px;
+    }
+    .upper p{
+        font-size: 20px;
+    }
+    .lower{
+        width: fit-content;
+        flex-wrap: wrap;
+    }
+    .learn-more{
+        height: 2rem;
+        margin-bottom: 1rem;
+    }
+    .lower img{
+        height: 0.8rem;
+    }
+   
+}
