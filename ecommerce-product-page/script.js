@@ -18,7 +18,7 @@ thumbnail_2.addEventListener('click', ()=>{
 thumbnail_3.addEventListener('click', ()=>{
     prod_img.style.backgroundImage = "url('./images/image-product-3.jpg')"
 })
-thumbnail_3.addEventListener('click', ()=>{
+thumbnail_4.addEventListener('click', ()=>{
     prod_img.style.backgroundImage = "url('./images/image-product-4.jpg')"
 })
 
