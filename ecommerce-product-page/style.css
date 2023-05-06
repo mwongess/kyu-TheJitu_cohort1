@@ -20,7 +20,8 @@ body {
 .nav-left,
 .nav-right,
 .add-to-cart-btn button,
-.add-sub {
+.add-sub ,
+.main-right-lower{
   align-items: center;
 }
 .navigation {
@@ -46,7 +47,6 @@ body {
 }
 .left-upper {
   height: 80%;
-  /* width: 100%; */
   border-radius: 7px;
   margin-bottom: 2rem;
   background-image: url(./images/image-product-1.jpg);
@@ -68,11 +68,16 @@ body {
 }
 .right{
     padding: 5rem;
+    gap: 1rem;
     flex-direction: column;
     justify-content: center;
 }
+.right h4{
+  color: hsl(26, 100%, 55%);
+}
 .main-right-lower {
   justify-content: space-between;
+  gap: 1rem;
 }
 .add-sub {
   gap: 2rem;
