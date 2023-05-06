@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  padding: 1rem 7rem;
+  padding: 1rem 14rem;
 }
 .navigation,
 .nav-left,
@@ -41,7 +41,7 @@ body {
   height: 2.5rem;
 }
 .main {
-    margin-top: 5rem;
+    margin-top: 4rem;
   height: 60vh;
 }
 .left-upper {
@@ -63,7 +63,8 @@ body {
   border-radius: 7px;
 }
 .left-lower img:hover {
-  opacity: 0;
+  opacity: .6;
+  border: 2px solid hsl(26, 100%, 55%);
 }
 .right{
     padding: 5rem;
