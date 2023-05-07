@@ -103,3 +103,24 @@ body {
 .cancelled{
   text-decoration: line-through;
 }
+@media screen and (max-width: 600px){
+  body{
+    padding: 0;
+  }
+  .navigation{
+    display: none;
+  }
+  .main{
+    margin-top: 0;
+    flex-direction: column;
+  }
+  .right{
+    padding: 1rem;
+  }
+  .left-upper{
+    height: 350px;
+  }
+  .left-lower{
+    display: none;
+  }
+}
