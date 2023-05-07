@@ -72,7 +72,7 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-.right h4{
+.right h6{
   color: hsl(26, 100%, 55%);
 }
 .main-right-lower {
@@ -92,4 +92,14 @@ body {
   height: 2rem;
   width: 10rem;
   gap: 0.5rem;
+}
+.percent{
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  color: hsl(26, 100%, 55%);
+  background-color: hsl(25, 100%, 94%);
+  text-align: center;
+}
+.cancelled{
+  text-decoration: line-through;
 }
