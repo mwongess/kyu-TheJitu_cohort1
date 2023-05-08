@@ -1,7 +1,7 @@
 # Find all work
 
-- [Ecommerce Product Page](./ecommerce-product-page/)
-- [Dropdown section](./intro-section-with-dropdown-navigation-main/)
+- [1. Ecommerce Product Page](./ecommerce-product-page/)
+- [2. Dropdown section](./intro-section-with-dropdown-navigation-main/)
 ## Author :black_nib:
 
 * Amos Mwongela <[mwongess](https://github.com/mwongess)>
