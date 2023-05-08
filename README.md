@@ -2,6 +2,8 @@
 
 - [1. Ecommerce Product Page](./ecommerce-product-page/)
 - [2. Dropdown section](./intro-section-with-dropdown-navigation-main/)
+- [3. Time Tracking Dashboard](./time-tracking-dashboard/)
+
 ## Author :black_nib:
 
 * Amos Mwongela <[mwongess](https://github.com/mwongess)>
