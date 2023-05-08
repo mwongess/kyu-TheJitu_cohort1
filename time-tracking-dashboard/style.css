@@ -1,98 +1,133 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;}
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4rem;
+  background-color: hsl(226, 43%, 10%);
 }
-body{
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    padding: 0 4rem;
-    background-color: hsl(226, 43%, 10%);
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1rem;
 }
-.container{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 1rem;
+.grid-item {
+  border-radius: 10px;
+  gap: 2rem;
 }
-.grid-item{
-    border-radius: 5px;
-}
-.jeremy{
-    grid-row: 1 /span 2;
-}
-.jeremy-top{
-    color: #fff;
-    padding: 2rem;
-    border-radius: 5px;
-    background-color: hsl(195, 74%, 62%);
-}
-.jeremy-bottom{
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding: 1rem;
-    color: #fff;
-    background-color: hsl(235, 46%, 20%);
 
+.jeremy {
+  grid-row: 1 / span 2;
+  background-color: hsl(235, 46%, 20%);
 }
-.profile img{
-    height: 3rem;
+.jeremy-top {
+  color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: hsl(195, 74%, 62%);
+  height: 65%;
 }
-.item-top{
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    justify-content: end;
-    padding: 0.5rem;
-    display: flex;
-    height: 2rem;
+.jeremy-bottom {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 1rem;
+  background-color: hsl(235, 46%, 20%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 25%;
+  color: hsl(236, 100%, 87%);
 }
-.item-top img{
-    height: 1.5rem;
+.profile img {
+  height: 3.3rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
 }
-.item-bottom{
-    color: #fff;
-    padding: 1rem;
-    background-color: hsl(235, 46%, 20%);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+.item-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  justify-content: end;
+  padding: 0.5rem;
+  display: flex;
+  height: 25%;
 }
-.work-top{
-    background-color: hsl(15, 100%, 70%);
+.item-top img {
+  height: 1.5rem;
 }
-.play-top{
-    background-color: hsl(195, 74%, 62%);
+.item-bottom {
+  height: 80%;
+  transform: translateY(-6%);
+  color: #fff;
+  padding: 1rem;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
 }
-.study-top{
-    background-color: hsl(348, 100%, 68%);
+.work-top {
+  background-color: hsl(15, 100%, 70%);
 }
-.exercise-top{
-    background-color:  hsl(145, 58%, 55%);
+.play-top {
+  background-color: hsl(195, 74%, 62%);
 }
-.social-top{
-    background-color: hsl(264, 64%, 52%);
+.study-top {
+  background-color: hsl(348, 100%, 68%);
 }
-.selfcare-top{
-    background-color: hsl(43, 84%, 65%);
+.exercise-top {
+  background-color: hsl(145, 58%, 55%);
+}
+.social-top {
+  background-color: hsl(264, 64%, 52%);
+}
+.selfcare-top {
+  background-color: hsl(43, 84%, 65%);
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.title p {
+  font-size: 18px;
+}
+.time h1 {
+  margin-bottom: 0.5rem;
+}
+.time p {
+  color: hsl(236, 100%, 87%);
 }
 @media screen and (orientation: portrait) {
-    body{
-        padding: 1rem;
-        display: block;
-    }
-    .container,.jeremy-top,.jeremy-bottom,.time{
-        display: flex;
-        justify-content: space-between;
-        gap: 1.5rem;
-    }
-    .container{
-        flex-direction: column;
-    }
-    .jeremy-top{
-        justify-content: flex-start;
-    }
-    .time{
-        margin-top: 1rem
-    }
- 
+  body {
+    padding: 1rem;
+    display: block;
+  }
+  .container,
+  .jeremy-top,
+  .jeremy-bottom,
+  .time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .jeremy-top {
+    justify-content: flex-start;
+  }
+  .time {
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .time h1 {
+    margin: 0;
+  }
 }
