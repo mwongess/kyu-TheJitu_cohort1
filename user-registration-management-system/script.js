@@ -2,6 +2,7 @@ const createUserBtn = document.querySelector(".btn");
 // Select elements from the dom
 const form = document.forms["user-form"];
 
+// Dummy data displayed when the page launches
 const users = [
   { name: "John Doe", id: "1r12", country: "United States" },
   { name: "Jane Smith", id: "2", country: "Canada" },
@@ -11,6 +12,7 @@ const users = [
   { name: "Mohammed Ali", id: "5", country: "United Arab Emirates" },
 ];
 localStorage.setItem("users", JSON.stringify(users));
+
 
 createUserBtn.addEventListener("click", (e) => {
   e.preventDefault();
