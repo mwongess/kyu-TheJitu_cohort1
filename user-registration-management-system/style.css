@@ -38,11 +38,9 @@ form {
   padding: 1rem;
 }
 .main-left {
-  padding: 5rem;
+  padding:0 5rem;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 .main-left h1 {
   color: green;
@@ -67,4 +65,28 @@ button {
   height: 2.5rem;
   border: none;
   cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    .container{
+
+    }
+    .navigation{
+        display: none;
+    }
+    .main{
+        flex-direction: column;
+
+    }
+    .main-left{
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    form{
+        width: 100%;
+    }
+    input{
+        width: 100%;
+    }
 }

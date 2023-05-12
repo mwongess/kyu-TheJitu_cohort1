@@ -7,7 +7,7 @@ const displayUsers = () => {
   const outlet = document.querySelector(".outlet");
 
   const json_data = localStorage.getItem('users')
-  
+
   const data = JSON.parse(json_data)
 
   data.forEach((user) => {
@@ -17,6 +17,8 @@ const displayUsers = () => {
             <td>${user.country}</td>
             <td>
             <button class="update">Update</button>
+            </td>
+            <td>
             <button class="delete">Delete</button>
             </td>
             </tr>
