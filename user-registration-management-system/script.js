@@ -13,7 +13,18 @@ const users = [
 ];
 localStorage.setItem("users", JSON.stringify(users));
 
+// Clears form after successful submission and redirects user to the users page
+const clearForm = () => {
+  form.elements.name.value = "";
+  form.elements.country.value = "";
+  form.elements.id.value = "";
+  // Redirect
+  setTimeout(() => {
+    location.href = "./users/index.html";
+  }, 1000);
+};
 
+// Handles click event on the add user button
 createUserBtn.addEventListener("click", (e) => {
   e.preventDefault();
   if (
@@ -35,5 +46,7 @@ createUserBtn.addEventListener("click", (e) => {
     users.push(user);
     const json_data = JSON.stringify(users);
     localStorage.setItem("users", json_data);
+
+    clearForm(); //Clear form
   }
 });
