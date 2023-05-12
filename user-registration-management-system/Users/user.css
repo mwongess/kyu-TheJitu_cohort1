@@ -1,87 +1,94 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.container{
-    /* margin-top: 1rem; */
-    display: flex;
-    gap: 2rem;
+.container {
+  /* margin-top: 1rem; */
+  display: flex;
+  gap: 2rem;
 }
-.navigation{
-    height: 100vh;
-    padding: 1rem 4rem;
-    box-shadow: 0 10px 15px rgb(0 0 0 / 0.2);
+.navigation {
+  height: 100vh;
+  padding: 1rem 4rem;
+  box-shadow: 0 10px 15px rgb(0 0 0 / 0.2);
 }
-.navigation .left{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+.navigation .left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
-a{
-    color: #000;
-    text-decoration: none;
+a {
+  color: #000;
+  text-decoration: none;
 }
-a:hover{
-    color: blue;
+a:hover {
+  color: blue;
 }
-.main{
-    width: 90%;
-    padding:0 1rem;
-    gap:  0.5rem;
-    height: auto;
+.main {
+  width: 90%;
+  padding: 0 1rem;
+  gap: 0.5rem;
+  height: auto;
 }
-.buttons{
-    margin-top: 1rem;
-    display: flex;
-    gap: 3rem;
+.buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 3rem;
 }
-button{
-    height: 2rem;
-    width: 6rem;
-    border: none;
-    padding: 0.5rem;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
+button {
+  height: 2rem;
+  width: 6rem;
+  border: none;
+  padding: 0.5rem;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.delete{
-    background-color: #FF4136;
+.delete {
+  background-color: #ff4136;
 }
-.update{
-    margin-left: 1rem !important;
-    background-color: #4CAF50;
+.update {
+  margin-left: 1rem !important;
+  background-color: #4caf50;
 }
 table {
-    width: 100%;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #DDD;
-  }
-  
-  tr:hover {background-color: #D6EEEE;}
+  width: 100%;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #d6eeee;
+}
+img {
+  height: 2rem;
+}
 @media screen and (orientation: portrait) {
-    .container{
-        flex-direction: column;
-    }
-    .navigation{
-        display: none;
-    }
-    .main{
-        width: 100%;
-    }
-   
-    button{
-        width: 3rem;
-        height: 1.5rem;
-        padding: 0;
-    }
-    th, td {
-        padding: 6px;
-    }
+  .container {
+    flex-direction: column;
+  }
+  .navigation {
+    display: none;
+  }
+  .main {
+    width: 100%;
+  }
+
+  button {
+    width: 3rem;
+    height: 1.5rem;
+    padding: 0;
+  }
+  th,
+  td {
+    padding: 6px;
+  }
 }
