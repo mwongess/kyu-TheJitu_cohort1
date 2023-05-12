@@ -12,7 +12,7 @@ const displayUsers = () => {
             <td>${user.name}</td>
             <td>${user.country}</td>
             <td>
-            <button class="update">Update</button>
+            <button onclick="updateUser('${user.id}')" class="update">Update</button>
             </td>
             <td>
             <button onclick="deleteUser('${user.id}')" class="delete">Delete</button>
@@ -22,7 +22,13 @@ const displayUsers = () => {
   });
 };
 
-const updateUser = (id) => {};
+const updateUser = (id) => {
+  const user_to_update = data.find((user) => {
+    return user.id == id;
+  });
+  localStorage.setItem("user", JSON.stringify(user_to_update));
+  location.href = "../update/index.html"
+};
 
 const deleteUser = (id) => {
   const data_after_deleted = data.filter((user) => {
