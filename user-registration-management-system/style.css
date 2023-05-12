@@ -47,6 +47,7 @@ form {
   font-size: 65px;
 }
 form {
+    margin-top: 0.5rem;
   width: 50vw;
   flex-direction: column;
 }
@@ -67,9 +68,6 @@ button {
   cursor: pointer;
 }
 @media screen and (max-width: 600px) {
-    .container{
-
-    }
     .navigation{
         display: none;
     }
