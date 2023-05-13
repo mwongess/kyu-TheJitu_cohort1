@@ -6,7 +6,7 @@ const renderForm = () => {
     <form action="" name="user-form">
         <input type="text" name="name" placeholder="${user_to_update.name}" value="">
         <input type="text" name="id" placeholder="${user_to_update.id}" value="">
-        <select name="country" placeholder="}">
+        <select name="country">
             <option value="Angola">Angola</option>
             <option value="Benin">Benin</option>
             <option value="Botswana">Botswana</option>
