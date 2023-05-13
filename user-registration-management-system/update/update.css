@@ -56,3 +56,14 @@ button {
   color: #fff;
   background-color: #4caf50;
 }
+@media screen and (max-width: 600px) {
+    .container{
+        flex-direction: column;
+    }
+    .navigation{
+        display: none;
+    }
+    .main,form{
+        width: 100%;
+    }
+}
