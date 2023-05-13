@@ -6,9 +6,7 @@ const renderForm = () => {
     <form action="" name="user-form">
         <input type="text" name="name" placeholder="${user_to_update.name}" value="">
         <input type="text" name="id" placeholder="${user_to_update.id}" value="">
-        <select name="country" placeholder="${user_to_update.country}">
-            <option value="${user_to_update.country}"></option>
-            <option value="Kenya">Kenya</option>
+        <select name="country" placeholder="}">
             <option value="Angola">Angola</option>
             <option value="Benin">Benin</option>
             <option value="Botswana">Botswana</option>
@@ -21,8 +19,33 @@ const renderForm = () => {
     </form>
     `;
 };
+renderForm();
 
-const updateUser = ()=>{
+const form = document.forms["user-form"];
+const btn = document.querySelector(".btn");
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  const name = form.elements.name.value;
+  const id = form.elements.id.value;
+  const country = form.elements.country.value;
 
-}
-renderForm()
+  if (!name || !id || !country) {
+    alert("Nothing changed!");
+  } else {
+    const initial_data = JSON.parse(localStorage.getItem("users"));
+    const data_without_user_to_update = initial_data.filter((user) => {
+      return user.id != user_to_update.id;
+    });
+
+    const updatedUser = {
+      name,
+      id,
+      country,
+    };
+    const updatedUsers = [...data_without_user_to_update, updatedUser];
+    localStorage.setItem("users", JSON.stringify(updatedUsers));
+    setTimeout(() => {
+      location.href = "../users/index.html";
+    }, 1500);
+  }
+});

@@ -9,7 +9,7 @@ const users = [
   { name: "Bob Johnson", id: "3", country: "United Kingdom" },
   { name: "Sarah Lee", id: "4", country: "Australia" },
   { name: "Mohammed Ali", id: "5", country: "United Arab Emirates" },
-  { name: "Mohammed Ali", id: "5", country: "United Arab Emirates" },
+  // { name: "Mohammed Ali", id: "5", country: "United Arab Emirates" },
 ];
 localStorage.setItem("users", JSON.stringify(users));
 
