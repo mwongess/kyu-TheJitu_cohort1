@@ -15,7 +15,7 @@ const renderForm = () => {
             <option value="Cabo Verde">Cabo Verde</option>
             <option value="Cameroon">Cameroon</option>
         </select>
-        <button class="btn" type="submit">Update User</button>
+        <button class="btn" type="submit">Update ${user_to_update.name}</button>
     </form>
     `;
 };
