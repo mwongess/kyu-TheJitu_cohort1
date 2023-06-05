@@ -20,7 +20,7 @@ const clearForm = () => {
   form.elements.id.value = "";
   // Redirect
   setTimeout(() => {
-    location.href = "./users/";
+    location.href = "./Users/";
   }, 1000);
 };
 
